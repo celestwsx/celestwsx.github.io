@@ -55,7 +55,16 @@
                     <p>The key to getting the circuit to work is the use of switch states. I used boolean because we just needed to define whether it is true or false. Make sure to define it at the beginning so the program knows which refers to which.</p>
                     <img src="photos/circuit/switchstate.png" style="float:inline-end;height:40%;">
                     <h2> Interfacing a LDR with an RGB LED</h2>
-                    <p>For the next assignment, we will interface a photoresistor to be a moodlamp.</p>
+                    <p>For the next assignment, we will interface a photoresistor to be a moodlamp. Right now, the circuit below only lights up in green when we change the light detected by the LDR. We want to it show a multitude of colours.</p>
+                    <img src="photos/circuit/ldr.png" style="float:inline-end;height:40%;">
+                    <img src="photos/circuit/ldr code.png" style="float:inline-end;height:40%;">
+                    <p>The first thing you will notice is that the const int for the different colour of LEDs don't actually correspond to what is connected on the Arduino board. This is why only the green LED works. Make sure to change the values and then run the code again. Our blink program allows us to see the colours flashing once.</p>
+                    <img src="photos/circuit/ldr loop.png.png" style="float:inline-end;height:40%;">
+                    <p>Once you are done setting it up properly, you should see that the LED changes from red to magenta to yellow depending on the light. The 00&A is actually numerical values written in binary form. But what if we wanted a different combination of colour?</p>
+                    <p>Then changing it is just as easy as rewriting the values for the if statement. Since I do not know binary, I decided to write it in numerical form and came up with this.</p>
+                    <img src="photos/circuit/ldr modified.png" style="float:inline-end;height:40%;">
+                    <p>This changes the light from red to orange to yellow to white. If we wanted a different combination of colours, we can either change the order of the LED being lit, or change the numerical values to be more precise.</p>
+                    <img src="photos/circuit/woo light.gif" style="float:inline-end;height:40%;">
                     <h2>Interfacing an i2c LCD Panel</h2>
                     <p>For our last assignment, we shall interface an i2c LCD panel to update a counter every second. Make sure to install the liquidcrystal I2C program and include it in the beginning of your code else it would not work.</p>
                     <p>I first set up the circuit in TinkerCAD. Thankfully, they have a preset i2c LCD diagram for you to use. However, if you were to do it in real life, all you need to wire is the Vcc, Ground, SCL and SDA.</p>
