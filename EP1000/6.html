@@ -54,8 +54,10 @@
                     <img src="photos/circuit/led2.png" style="float:inline-end;height:40%;">
                     <p>The key to getting the circuit to work is the use of switch states. I used boolean because we just needed to define whether it is true or false. Make sure to define it at the beginning so the program knows which refers to which.</p>
                     <img src="photos/circuit/switchstate.png" style="float:inline-end;height:40%;">
+                    <h2> Interfacing a LDR with an RGB LED</h2>
+                    <p>For the next assignment, we will interface a photoresistor to be a moodlamp.</p>
                     <h2>Interfacing an i2c LCD Panel</h2>
-                    <p>For our next assignment, we shall interface an i2c LCD panel to update a counter every second. Make sure to install the liquidcrystal I2C program and include it in the beginning of your code else it would not work.</p>
+                    <p>For our last assignment, we shall interface an i2c LCD panel to update a counter every second. Make sure to install the liquidcrystal I2C program and include it in the beginning of your code else it would not work.</p>
                     <p>I first set up the circuit in TinkerCAD. Thankfully, they have a preset i2c LCD diagram for you to use. However, if you were to do it in real life, all you need to wire is the Vcc, Ground, SCL and SDA.</p>
                     <img src="photos/circuit/counter.png" style="float:inline-end;height:40%;">
                     <p>For my code, I put my name in the setup so it does not have to keep printing it every time the program loops. I used the integer function to count in percentage. Every 60 seconds, the program loops and changes the number by adding 1 digit to it. I also added a code in the beginning that tells the program to print the numbers on the second column rather than the first, so you can see the name that I put in the setup. The site that helped me understand was https://yoursunny.com/t/2017/ESP8266-LCD-count-up-timer/.</p>
